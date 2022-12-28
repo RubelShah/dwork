@@ -1526,6 +1526,7 @@ button:not(:disabled),
   color: #FF6700;
   font-size: 0.75rem;
   font-weight: bold;
+  margin-top: 16px;
 }
 .interest {
   background-color: #E5EAF7;
@@ -1544,13 +1545,8 @@ button:not(:disabled),
 }
 
 .article-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 20px;
 }
 
