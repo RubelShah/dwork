@@ -56,9 +56,9 @@ productGrid.addEventListener('click',function(){
       var swiper2 = new Swiper(".tabSwiper", {
         slidesPerView: 4,
         centeredSlides: true,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        spaceBetween: 30,
+        // loop: true,
+        // loopFillGroupWithBlank: true,
+        spaceBetween: 10,
         grabCursor: true,
         pagination: {
           el: ".swiper-pagination",
