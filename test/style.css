@@ -1221,6 +1221,12 @@ button:not(:disabled),
   display: block;
   padding: 10px 0px;
 }
+@media(max-width: 360px){
+  .photo-box img {
+    padding: 10px 0px 0 10px;
+    object-fit: contain;
+  }
+}
 .photo-box img:hover{
   transform: scale(1.1);
   transition: 0.3s;
@@ -1239,7 +1245,7 @@ button:not(:disabled),
   line-height: 40px!important;
   border: 1px solid #fff;
   border-radius: 50%;
-  background-color: #000;
+  background-color: rgba(0,0,0,0.4);
 }
 .arrow-btn-prev::after,.arrow-btn-next::after{
   font-size: 1rem;
@@ -1999,5 +2005,15 @@ button:not(:disabled),
   .menu-right p {
     text-align: center;
     margin-top: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .arrow-btn-prev, .arrow-btn-next {
+    height: 30px!important;
+    width: 30px!important;
+    line-height: 30px!important;
+  }
+  .arrow-btn-prev::after,.arrow-btn-next::after{
+    font-size: 0.7rem;
   }
 }
