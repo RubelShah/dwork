@@ -1221,10 +1221,16 @@ button:not(:disabled),
   display: block;
   padding: 10px 0px;
 }
-@media(max-width: 360px){
+@media(max-width: 576px){
   .photo-box img {
     padding: 10px 0px 0 10px;
     object-fit: contain;
+  }
+}
+@media(max-width: 991px){
+  .photo-box img {
+    padding: 10px 0px 0 10px;
+    object-fit: fill;
   }
 }
 .photo-box img:hover{
