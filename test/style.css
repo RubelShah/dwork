@@ -1987,7 +1987,7 @@ button:not(:disabled),
   overflow: hidden;
 }
 .active-p{
-  height: 85%;
+  height: 94%;
   visibility: visible;
 }
 @media(max-width: 576px){
