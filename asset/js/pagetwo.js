@@ -65,3 +65,34 @@ productGrid.addEventListener('click',function(){
           clickable: true,
         },
       });
+
+//variables
+let readMore = document.getElementById('read-more1');
+let paraGraph = document.querySelector('.paragraph');
+
+
+readMore.addEventListener('click',function(){
+  if(readMore.innerText == 'Read More'){
+    readMore.innerText = 'Read Less';
+  }else{
+    readMore.innerText = 'Read More';
+    let objControl=document.getElementById("jump");
+    window.scrollTo({top: objControl.offsetTop-250, behavior: 'smooth'});
+  }
+  paraGraph.classList.toggle('active-p');
+})
+/*******************************************/
+let readMore2 = document.getElementById('read-more2');
+let paraGraph2 = document.querySelector('.paragraph2');
+
+
+readMore2.addEventListener('click',function(){
+  if(readMore2.innerText == 'Read More'){
+    readMore2.innerText = 'Read Less';
+  }else{
+    readMore2.innerText = 'Read More';
+    let objControl=document.getElementById("jump2");
+    window.scrollTo({top: objControl.offsetTop-250, behavior: 'smooth'});
+  }
+  paraGraph2.classList.toggle('active-p');
+})

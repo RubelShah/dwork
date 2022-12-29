@@ -1509,7 +1509,7 @@ button:not(:disabled),
   font-size: 20px;
   font-weight: bold;
 }
-.feature-text p {
+.feature-text p,.paragraph,.paragraph2 {
   color: #666;
   font-size: 1rem;
 }
@@ -1520,13 +1520,15 @@ button:not(:disabled),
 .read-moreBtn {
   text-align: right;
 }
-.read-moreBtn a {
+.read-moreBtn button {
   display: inline-block;
   text-transform: capitalize;
   color: #FF6700;
   font-size: 0.75rem;
   font-weight: bold;
   margin-top: 16px;
+  border: none;
+  background-color: transparent;
 }
 .interest {
   background-color: #E5EAF7;
@@ -1978,6 +1980,16 @@ button:not(:disabled),
   color: #002953;
   font-size: 0.8rem;
 }
+.paragraph,.paragraph2{
+  height: 0px;
+  visibility: hidden;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.active-p{
+  height: 85%;
+  visibility: visible;
+}
 @media(max-width: 576px){
   .footer-box{
     justify-content: center;
@@ -2023,7 +2035,7 @@ button:not(:disabled),
   }
 }
 @media(max-width:991px){
-  .read-moreBtn {
+  .read-moreBtn{
     text-align: center;
   }
   .bread-show{
